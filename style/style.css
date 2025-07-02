@@ -3,8 +3,14 @@
 /* dark grey: #7b7b7b */
 /* light grey: #acaeab */
 :root {
-  --main-color: #2196f3;
-  --nav-color: #faebd7;
+  --bg-color: #1d1135; /* خلفية الصفحة */
+  --card-bg: #2b124c; /* خلفية البطاقة (form) */
+  --input-bg: #ffffff; /* خلفية الحقول */
+  --input-text: #000000; /* لون النص داخل الحقول */
+  --button-bg: #7b2cbf; /* زر "Sign up" */
+  --button-text: #ffffff; /* نص الزر */
+  --link-color: #dcd1f7; /* لون رابط "Login" */
+  --heading-color: #ffffff; /* لون العنوان "Sign up" */
 }
 * {
   margin: 0;
@@ -12,39 +18,6 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-main {
-  background-color: var(--main-color);
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.navbar {
-  background-color: var(--nav-color);
-  padding: 15px 30px;
-  border-radius: 5px;
-  box-shadow: 1px 2px 5px black;
-}
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  gap: 20px;
-}
-.navbar ul a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #505050;
-}
-.navbar ul a::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background-color: var(--main-color);
-  display: block;
-  transition: all 0.5s;
-}
-.navbar ul a:hover::after {
-  width: 100%;
+body {
+  background-color: var(--bg-color);
 }
